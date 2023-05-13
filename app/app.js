@@ -86,6 +86,7 @@
         <span class="text-${this.getResultColor(percent)}">
           Score: ${percent}%</span>`;
         this.$result.classList.remove('d-none');
+        window.scrollTo(0, 0);
       });
     },
     listenForResetForm() {
@@ -95,8 +96,9 @@
         for (const box of checkboxes) {
           box.checked = false;
         }
+        window.scrollTo(0, 0);
         this.$result.innerHTML = '';
-        this.$result.classList.toggle('d-none');
+        this.$result.classList.add('d-none');
       });
     },
     getSlug(str) {

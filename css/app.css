@@ -1,0 +1,25 @@
+.container {
+  width: calc(100% - 2rem);
+  max-width: 50rem;
+}
+
+nav {
+  position: relative;
+  padding: 0.5rem;
+}
+
+nav img {
+  width: 2rem;
+}
+
+nav h2 {
+  font-weight: 600;
+}
+
+.choose-language {
+  width: 4.5rem;
+  max-width: 4.525rem;
+  position: absolute;
+  top: 0.6rem;
+  right: 0.5rem;
+}

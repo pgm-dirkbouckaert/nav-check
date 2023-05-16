@@ -52,7 +52,7 @@
             (item) => item.category[this.language] === category
           );
           return `
-            <h5 class="border rounded bg-light shadow-sm p-2 mt-3">${category}</h5>
+            <h5 class="border rounded bg-light shadow-sm p-2 mt-4">${category}</h5>
             ${filteredData
               .map((item, index) => {
                 return `

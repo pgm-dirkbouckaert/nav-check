@@ -10,6 +10,7 @@ html {
 nav {
   position: relative;
   padding: 0.5rem;
+  margin-bottom: 2.25rem;
 }
 
 nav img {

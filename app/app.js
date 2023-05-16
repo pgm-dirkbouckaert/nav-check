@@ -52,11 +52,11 @@
             (item) => item.category[this.language] === category
           );
           return `
-            <h3 class="border rounded bg-light shadow-sm p-2 mt-3">${category}</h3>
+            <h5 class="border rounded bg-light shadow-sm p-2 mt-3">${category}</h5>
             ${filteredData
               .map((item, index) => {
                 return `
-                <div class="form-check fs-5">
+                <div class="form-check">
                   <input  type="checkbox"
                       class="form-check-input"
                       name="${this.getSlug(item.text[this.language])}" 

@@ -57,12 +57,13 @@
               .map((item, index) => {
                 return `
                 <div class="form-check">
-                  <input  type="checkbox"
+                  <input type="checkbox"
                       class="form-check-input"
                       name="${this.getSlug(item.text[this.language])}" 
-                      id="check-${index}"
+                      id="check-${this.getSlug(category)}-${index}"
                       value="${item.score}" />
-                  <label for="check-${index}" class="form-check-label">
+                  <label for="check-${this.getSlug(category)}-${index}" 
+                    class="form-check-label">
                     ${item.text[this.language]}
                   </label>
               </div>`;
